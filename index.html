@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad Aranza 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Canvas para nieve animada -->
+    <canvas id="snowCanvas"></canvas>
+
+    <!-- Fondo de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Estrellas brillantes animadas -->
+    <div class="stars-background"></div>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Sección Hero Premium -->
+        <section class="hero-section">
+            <!-- Luces navideñas animadas -->
+            <div class="christmas-lights-container">
+                <div class="string"></div>
+                <div class="lights">
+                    <div class="light" style="--i: 1"></div>
+                    <div class="light" style="--i: 2"></div>
+                    <div class="light" style="--i: 3"></div>
+                    <div class="light" style="--i: 4"></div>
+                    <div class="light" style="--i: 5"></div>
+                    <div class="light" style="--i: 6"></div>
+                    <div class="light" style="--i: 7"></div>
+                    <div class="light" style="--i: 8"></div>
+                    <div class="light" style="--i: 9"></div>
+                    <div class="light" style="--i: 10"></div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <!-- Decoración navideña flotante -->
+                <div class="floating-ornaments">
+                    <div class="ornament-float" style="--delay: 0s; --x: -200px; --y: 100px;">🎄</div>
+                    <div class="ornament-float" style="--delay: 1s; --x: 200px; --y: 150px;">⭐</div>
+                    <div class="ornament-float" style="--delay: 2s; --x: -150px; --y: 200px;">🎁</div>
+                    <div class="ornament-float" style="--delay: 1.5s; --x: 180px; --y: 80px;">❄️</div>
+                </div>
+
+                <!-- Título principal mejorado -->
+                <div class="title-container">
+                    <div class="title-glow"></div>
+                    <h1 class="main-title">
+                        <span class="title-line" data-text="Feliz Navidad">Feliz Navidad</span>
+                        <span class="title-name" data-text="Aranza">Aranza</span>
+                        <span class="title-heart-container">
+                            <span class="title-heart beating">💕</span>
+                        </span>
+                    </h1>
+                </div>
+
+                <div class="subtitle-container">
+                    <div class="subtitle-decoration">✨</div>
+                    <p class="subtitle">Esta Nochebuena es mágica porque estás en mi vida</p>
+                    <div class="subtitle-decoration">✨</div>
+                </div>
+
+                <!-- Indicador de scroll mejorado -->
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Desliza para descubrir tu regalo</div>
+                    <div class="scroll-arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de mensaje especial mejorada -->
+        <section class="message-section">
+            <div class="section-header">
+                <h2 class="section-title-main">
+                    <span class="title-icon">💝</span>
+                    Un Mensaje Especial Para Ti
+                    <span class="title-icon">💝</span>
+                </h2>
+            </div>
+
+            <div class="glass-card-premium">
+                <div class="card-shine"></div>
+                <div class="card-icon-top">✨</div>
+                <div class="message-content">
+                    <p class="message-text">
+                        En esta mágica Navidad quiero que sepas que <strong>eres el mejor regalo</strong> que la vida me
+                        ha dado.
+                        Cada momento a tu lado es como abrir un presente lleno de amor, alegría y felicidad.
+                    </p>
+                    <div class="message-divider">
+                        <span>❄️</span>
+                        <span>⭐</span>
+                        <span>❄️</span>
+                    </div>
+                    <p class="message-text">
+                        Que esta Nochebuena esté llena de momentos hermosos, risas compartidas y la calidez de nuestro
+                        amor.
+                        <strong>Eres mi estrella más brillante</strong> en este cielo navideño.
+                    </p>
+                    <p class="signature">Con todo mi amor, siempre 💝</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Tags Navideñas 3D -->
+        <section class="christmas-tags-section">
+            <div class="section-header">
+                <h2 class="section-title-main">
+                    <span class="title-icon">🏷️</span>
+                    Etiquetas del Corazón
+                    <span class="title-icon">🏷️</span>
+                </h2>
+                <p class="section-subtitle">Pasa el mouse sobre cada etiqueta para ver mi mensaje</p>
+            </div>
+
+            <div class="tags">
+                <div class="tag-container">
+                    <div class="tag">
+                        <div class="tag-side tag-1-side">
+                            <div class="tag-1-top"></div>
+                            <div class="tag-text tag-1-text">
+                                Para<br />Aranza
+                                <div class="rule-shape rule-red">★</div>
+                            </div>
+                        </div>
+                        <div class="tag-side tag-1-side is-back">
+                            <div class="tag-1-top"></div>
+                            <div class="tag-text tag-1-text">
+                                Mi amor eterno en esta Navidad
+                                <div class="rule-shape">★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tag-container">
+                    <div class="tag">
+                        <div class="tag-side tag-2-side">
+                            <div class="tag-text tag-2-text">
+                                Eres<br />Mi Regalo
+                                <div class="rule-diagonal"></div>
+                            </div>
+                        </div>
+                        <div class="tag-side tag-2-side is-back">
+                            <div class="tag-text tag-2-text">
+                                El mejor presente de mi vida
+                                <div class="rule-diagonal"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tag-container">
+                    <div class="tag">
+                        <div class="tag-side tag-3-side">
+                            <div class="tag-text tag-3-text">
+                                Te<br />Amo
+                                <div class="rule-shape">❄</div>
+                            </div>
+                        </div>
+                        <div class="tag-side tag-3-side is-back">
+                            <div class="tag-text tag-3-text">
+                                Hoy y siempre mi amor
+                                <div class="rule-shape">❄</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Snow Globe -->
+        <section class="snowglobe-section">
+            <div class="section-header">
+                <h2 class="section-title-main">
+                    <span class="title-icon">🌨️</span>
+                    Nuestro Mundo Mágico
+                    <span class="title-icon">🌨️</span>
+                </h2>
+                <p class="section-subtitle">Un pequeño mundo donde solo existimos tú y yo</p>
+            </div>
+
+            <div class="snowglobe-container-wrapper">
+                <div class="snowglobe">
+                    <div class="sg-bg"></div>
+                    <div class="grnd-snow">
+                        <div class="snow-surface"></div>
+                    </div>
+                    <div class="tree">
+                        <div class="tree-shadow"></div>
+                        <div class="branch-bot">
+                            <div class="branch-bot-snow"></div>
+                            <div class="branch-shadow"></div>
+                        </div>
+                        <div class="branch-mid">
+                            <div class="branch-mid-snow"></div>
+                            <div class="branch-shadow"></div>
+                        </div>
+                        <div class="branch-top">
+                            <div class="branch-top-snow"></div>
+                        </div>
+                        <div class="star"></div>
+                        <div class="baubles"></div>
+                    </div>
+                    <div class="sm-shadow"></div>
+                    <div class="snowman">
+                        <div class="snowman-bot"></div>
+                        <div class="snowman-top"></div>
+                        <div class="coal"></div>
+                        <div class="carrot"></div>
+                    </div>
+                    <div class="falling-snow-wrap">
+                        <div class="falling-snow">
+                            <div class="flakes1">
+                                <p>*</p>
+                            </div>
+                            <div class="flakes2">
+                                <p>*</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sg-fg"></div>
+                    <div class="stand-curved-wrap">
+                        <div class="stand-curved"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snowglobe-message">
+                <p>Como esta bola de nieve, nuestro amor es un mundo perfecto y único 💕</p>
+            </div>
+        </section>
+
+        <!-- Sección de momentos mágicos mejorada -->
+        <section class="memories-section">
+            <div class="section-header">
+                <h2 class="section-title-main">
+                    <span class="title-icon">🌟</span>
+                    Nuestros Momentos Mágicos
+                    <span class="title-icon">🌟</span>
+                </h2>
+            </div>
+
+            <div class="memories-grid-premium">
+                <div class="memory-card-premium" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="memory-icon-large">🌟</div>
+                    <h3>Primer Momento</h3>
+                    <div class="memory-line"></div>
+                    <p>Desde que llegaste a mi vida, cada día es Navidad</p>
+                </div>
+
+                <div class="memory-card-premium" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="memory-icon-large">💖</div>
+                    <h3>Tu Sonrisa</h3>
+                    <div class="memory-line"></div>
+                    <p>Tu sonrisa ilumina mi mundo más que todas las luces navideñas</p>
+                </div>
+
+                <div class="memory-card-premium" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="memory-icon-large">🎁</div>
+                    <h3>Cada Día Juntos</h3>
+                    <div class="memory-line"></div>
+                    <p>Cada segundo a tu lado es un regalo que atesoro</p>
+                </div>
+
+                <div class="memory-card-premium" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="memory-icon-large">⭐</div>
+                    <h3>Nuestro Futuro</h3>
+                    <div class="memory-line"></div>
+                    <p>Juntos brillaremos más que cualquier estrella navideña</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de deseos mejorada -->
+        <section class="wishes-section">
+            <div class="wish-container-premium">
+                <h2 class="wish-title">Mis Deseos Para Ti Esta Navidad</h2>
+
+                <div class="wishes-grid">
+                    <div class="wish-card">
+                        <div class="wish-number">1</div>
+                        <div class="wish-icon">🌟</div>
+                        <p>Que tu corazón esté lleno de alegría y amor</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">2</div>
+                        <div class="wish-icon">✨</div>
+                        <p>Que todos tus sueños se hagan realidad</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">3</div>
+                        <div class="wish-icon">💫</div>
+                        <p>Que nuestra historia de amor continúe siendo mágica</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">4</div>
+                        <div class="wish-icon">🎀</div>
+                        <p>Que cada día juntos sea una nueva aventura</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón sorpresa mejorado -->
+        <section class="interactive-section">
+            <div class="gift-box-container">
+                <div class="gift-box-premium" id="giftBox">
+                    <div class="gift-lid">
+                        <div class="gift-bow">🎀</div>
+                    </div>
+                    <div class="gift-body">🎁</div>
+                </div>
+                <button class="special-button-premium" id="specialButton">
+                    <span class="button-sparkle">✨</span>
+                    <span class="button-text">Abre tu Regalo Especial</span>
+                    <span class="button-sparkle">✨</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Modal mejorado -->
+        <div class="modal-overlay" id="surpriseModal">
+            <div class="modal-content-premium">
+                <button class="close-modal-btn" aria-label="Cerrar">&times;</button>
+
+                <div class="modal-header">
+                    <h2 class="modal-title">¡Feliz Navidad, Mi Amor!</h2>
+                    <div class="modal-subtitle">🎄 ✨ 💕 ✨ 🎄</div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="gift-reveal">
+                        <div class="gift-animation">
+                            <div class="gift-icon">🎁</div>
+                            <div class="hearts-burst">
+                                <span class="burst-heart" style="--angle: 0deg">💖</span>
+                                <span class="burst-heart" style="--angle: 45deg">💝</span>
+                                <span class="burst-heart" style="--angle: 90deg">💗</span>
+                                <span class="burst-heart" style="--angle: 135deg">💓</span>
+                                <span class="burst-heart" style="--angle: 180deg">💕</span>
+                                <span class="burst-heart" style="--angle: 225deg">💖</span>
+                                <span class="burst-heart" style="--angle: 270deg">💝</span>
+                                <span class="burst-heart" style="--angle: 315deg">💗</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-message">
+                        <p>
+                            <strong>Eres la razón por la que creo en la magia de la Navidad.</strong>
+                            Gracias por llenar mi vida de amor, risas y momentos inolvidables.
+                        </p>
+                        <p class="love-declaration">
+                            Te amo más de lo que las palabras pueden expresar 💝
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <p>Esta página fue creada con amor, solo para ti</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer mejorado -->
+        <footer class="footer-premium">
+            <div class="footer-content">
+                <div class="footer-heart-pulse">💖</div>
+                <p class="footer-text">Hecho con todo mi amor para <strong>Aranza</strong></p>
+                <p class="footer-date">Navidad 2024</p>
+                <div class="footer-decorations">
+                    <span class="footer-deco">❄️</span>
+                    <span class="footer-deco">🎄</span>
+                    <span class="footer-deco">⭐</span>
+                    <span class="footer-deco">🎁</span>
+                    <span class="footer-deco">❄️</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
