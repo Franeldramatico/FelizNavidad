@@ -146,6 +146,7 @@ Esta página fue creada especialmente para Aranza con:
 
 ---
 
-**Feliz Navidad 2024** 🎄✨
+**Feliz Navidad 2025** 🎄✨
 
 *Que esta página te traiga tanta alegría como tú me traes a mí* 💕
+
